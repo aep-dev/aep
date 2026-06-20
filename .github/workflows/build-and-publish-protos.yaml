@@ -3,12 +3,16 @@ name: build-test-and-publish-protos
 on:
   push:
     paths:
+      - README.md
+      - LICENSE
       - .github/workflows/build-and-publish-protos.yaml
       - "proto/**"
       - buf.yaml
       - buf.lock
   pull_request:
     paths:
+      - README.md
+      - LICENSE
       - .github/workflows/build-and-publish-protos.yaml
       - "proto/**"
       - buf.yaml
